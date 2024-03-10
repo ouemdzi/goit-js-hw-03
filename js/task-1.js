@@ -9,6 +9,7 @@ function slugify(title) {
   let slug = replacedStr.toLowerCase();
   return slug;
 }
+// який може бути інший спосіб?
 
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
 console.log(slugify('English for developer')); // "english-for-developer"
