@@ -8,7 +8,7 @@
 
 function filterArray(numbers, value) {
   let newArray = [];
-  for (i = 0; i <= numbers.length; i++) {
+  for (let i = 0; i <= numbers.length; i++) {
     if (numbers[i] > value) {
       newArray.push(numbers[i]);
     }
@@ -16,6 +16,7 @@ function filterArray(numbers, value) {
   return newArray;
 }
 // не без допомоги АІ, ще трохи плутаю коли вживати і , а коли [i]
+// оголосила i =)
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
