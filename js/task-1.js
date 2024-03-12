@@ -1,15 +1,8 @@
-// Задача 1. Генератор slug
-// Напиши функцію slugify(title), яка приймає заголовок статті, параметр title і повертає slug, створений із цього рядка.
-// Значенням параметра title будуть рядки, слова яких розділені лише пробілами.
-// Усі символи slug повинні бути в нижньому регістрі.
-// Усі слова slug повинні бути розділені тире.
-
 function slugify(title) {
   const replacedStr = title.replaceAll(' ', '-');
   let slug = replacedStr.toLowerCase();
   return slug;
 }
-// який може бути інший спосіб?
 
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
 console.log(slugify('English for developer')); // "english-for-developer"
